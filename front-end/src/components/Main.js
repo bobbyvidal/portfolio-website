@@ -16,8 +16,17 @@ class Main extends React.Component {
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Graduate from the University of Houston with a Bachelor of Science. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <p>Graduate from the University of Houston with a Bachelor of Science. Throughout much of my undergraduate I was studying and preparing for Physical Therapy school. 
+            I volunteered over 300 hours in a variety of Physical Therapy clinics.
+            However, shortly after discovering my passion for code I began teaching myself through resources like Codecademy and the Flatiron School's free bootcamp prep resources.</p>
+          <p>After graduating from the University of Houston, I enrolled in the Flatiron School's Immersive Software Engineering Bootcamp 
+            with the dream of becoming a Full-Stack developer. At the Flatiron School we specialized in the languages of Ruby and JavaScript and front-end/back-end technologies like Ruby on Rails, 
+            NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI and Semantic UI.
+          </p>
+          <p>
+            Aside from coding, my passions include soccer, video games, and powerlifting. Growing up I was a competitive soccer player for 16 years and superfan of Manchester United. 
+            Going into college I found my other passions of PC gaming after I build my own computer and became a founding member of the University of Houston Powerlifting team. 
+          </p>
           {close}
         </article>
 
