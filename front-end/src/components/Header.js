@@ -9,7 +9,7 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Bobby Vidal </h1>
-                <p>Full-stack developer and graduate from the University of Houston.</p>
+                <p>Full-stack developer and graduate from the University of Houston. <br></br>Seeking new opportunities to leverage the knowledge I acquired at the Flatiron School Houston.</p>
             </div>
         </div>
         <nav>
