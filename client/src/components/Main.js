@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import pic01 from '../images/UofH-Day-Game.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
@@ -18,14 +17,13 @@ class Main extends React.Component {
     })
   }
 
-  handleReset = (event) => {
+  handleReset = () => {
     this.setState({
           name:'', 
           email: '',   
           message: ''
     })
   }
-
 
   render() {
     console.log(this.state)
@@ -104,7 +102,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="http://localhost:4000/contact">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" onChange = {this.handleChange}/>
@@ -118,7 +116,7 @@ class Main extends React.Component {
               <textarea name="message" id="message" rows="4" onChange = {this.handleChange}></textarea>
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
+              <li><input type="submit" value="Send Message" className="special" onSubmit = {this.handleSubmit}/></li>
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
           </form>
