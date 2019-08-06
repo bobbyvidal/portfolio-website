@@ -3,7 +3,8 @@ const app = express()
 var cors = require('cors')
 app.use(cors())
 const bodyParser = require('body-parser');
-var mailer = require('mailer')
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.use(bodyParser.json());
 
@@ -18,13 +19,15 @@ app.post('/contact', (req, res) => {
   const { email = '', name = '', message = '' } = req.body
   console.log(req.body)
 
-  mailer({ email, name, text: message }).then(() => {
-    console.log(`Sent the message "${message}" from <${name}> ${email}.`);
-    res.redirect('/#success');
-  }).catch((error) => {
-    console.log(`Failed to send the message "${message}" from <${name}> ${email} with the error ${error && error.message}`);
-    res.redirect('/#error');
-  })
+//   const msg = {
+//     to: 'bobbyvidal@gmail.com',
+//     from: 'test@example.com',
+//     subject: 'Sending with Twilio SendGrid is Fun',
+//     text: 'and easy to do anywhere, even with Node.js',
+//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+//   };
+//   sgMail.send(msg);
+  
 })
 
 const PORT = process.env.PORT || 4000;

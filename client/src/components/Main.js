@@ -25,6 +25,17 @@ class Main extends React.Component {
     })
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+        fetch('http://localhost:4000/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(this.state)
+        })
+  }
+
   render() {
     console.log(this.state)
 
@@ -102,21 +113,21 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="http://localhost:4000/contact">
+          <form method="post" onSubmit = {this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" onChange = {this.handleChange}/>
+              <input type="text" name="name" id="name" required onChange = {this.handleChange}/>
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" onChange = {this.handleChange}/>
+              <input type="text" name="email" id="email" required onChange = {this.handleChange}/>
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4" onChange = {this.handleChange}></textarea>
+              <textarea name="message" id="message" rows="4" required onChange = {this.handleChange}></textarea>
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" onSubmit = {this.handleSubmit}/></li>
+              <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
           </form>
