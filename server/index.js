@@ -3,9 +3,7 @@ const app = express()
 var cors = require('cors')
 app.use(cors())
 const bodyParser = require('body-parser');
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
+var nodemailer = require('nodemailer');
 app.use(bodyParser.json());
 
 app.use(bodyParser.json());
@@ -16,17 +14,30 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // })
 
 app.post('/contact', (req, res) => {
-  const { email = '', name = '', message = '' } = req.body
   console.log(req.body)
 
-//   const msg = {
-//     to: 'bobbyvidal@gmail.com',
-//     from: 'test@example.com',
-//     subject: 'Sending with Twilio SendGrid is Fun',
-//     text: 'and easy to do anywhere, even with Node.js',
-//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-//   };
-//   sgMail.send(msg);
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'bobbyvidalportfoliowebsite@gmail.com',
+      pass: process.env.PASSWORD
+    },
+  });
+  
+  var mailOptions = {
+    from: 'bobbyvidalportfoliowebsite@gmail.com',
+    to: 'bobbyvidal@gmail.com',
+    subject: `Sent by ${req.body.name} - ${req.body.email}`,
+    text: `${req.body}`
+  };
+  
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
   
 })
 
