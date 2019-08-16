@@ -79,25 +79,20 @@ class Main extends React.Component {
               <p>
               Responsive Web App that allows users to find restaurants near a geographic midpoint with texting capabilities.<br></br>
               </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/m03QK9_884E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                
               <h3>Draw! <br></br></h3>
               <p>
               Allows users to sketch and share ideas in real-time. <br></br>
               </p>
-
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xlZx8YlC5I8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               
               <h3>ToyTanks<br></br></h3>
               <p>
               Fully functioning Player vs Player tank game with bullet ricochet and hit detection physics.<br></br>
               </p>
-
-              
-              <h3>TalkAboutIt<br></br></h3>
-              <p>
-              Full CRUD blogging application with user email verification.<br></br>
-              </p>
-              
-          {close}
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/UYB5SAbw_yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
