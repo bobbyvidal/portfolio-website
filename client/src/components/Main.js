@@ -74,40 +74,29 @@ class Main extends React.Component {
 
         <article id="projects" className={`${this.props.article === 'projects' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Projects</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
+            
+              <h3>Halfway <br></br></h3>
               <p>
-              Halfway <br></br>
               Responsive Web App that allows users to find restaurants near a geographic midpoint with texting capabilities.<br></br>
-              + Implemented ES6 async/await syntax to properly order my backend fetches.<br></br>
-              + Permits users to favorite restaurants, store them in a cache, and text their stored restaurants to the person they are meeting.<br></br>
-              + Instrumented the Twilio API to allows for the texting capability.<br></br>
-              + Composed my application with Material UI for a smooth display and clean interface.<br></br>
+              </p>
+               
+              <h3>Draw! <br></br></h3>
+              <p>
+              Allows users to sketch and share ideas in real-time. <br></br>
+              </p>
+
+              
+              <h3>ToyTanks<br></br></h3>
+              <p>
+              Fully functioning Player vs Player tank game with bullet ricochet and hit detection physics.<br></br>
+              </p>
+
+              
+              <h3>TalkAboutIt<br></br></h3>
+              <p>
+              Full CRUD blogging application with user email verification.<br></br>
               </p>
               
-              <p>
-              Draw! <br></br>
-              Allows users to sketch and share ideas in real-time. <br></br>
-              + Implemented Socket IO for expedited real-time sharing. <br></br>
-              + Utilized ReactJS for efficient layout of page components.<br></br>
-              + Employed Semantic UI library to optimize front-end experience.<br></br>
-              + Incorporated NodeJS backend for user data persistence. <br></br>
-              </p>
-              <p>
-              ToyTanks<br></br>
-              Fully functioning Player vs Player tank game with bullet ricochet and hit detection physics.<br></br>
-              + Integrated Separating Axis Theorem for bullet collision and ricochet physics.<br></br>
-              + Spearheaded Player vs Player capabilities using JavaScript event listeners.<br></br>
-              + Instituted bullet explosion smoke graphics using setTimeouts.<br></br>
-              + Designed maps playable on any size screen with while loops and client widths/heights.<br></br>
-              </p>
-              <p>
-              TalkAboutIt<br></br>
-              Full CRUD blogging application with user email verification.<br></br>
-              + Generated many to many relationships with Active Record.<br></br>
-              + Persisted blogs and blog replies to a central database in accordance to RESTful conventions.<br></br>
-              + Stored user passwords responsibly with the bcrypt gem and password digest.<br></br>
-              + Programmed a user verification bot that randomly generates a 12 digit alphanumeric code.<br></br>
-              </p>
           {close}
         </article>
 
