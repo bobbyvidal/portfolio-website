@@ -115,7 +115,7 @@ class Main extends React.Component {
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
           </form> */}
-          <p>I would love to connect with you, feel free to connect with me using the links below!</p>
+          <p>I would love to connect with you, feel free to connect with me using the links below! Fill this out more somehow</p>
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
             <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
