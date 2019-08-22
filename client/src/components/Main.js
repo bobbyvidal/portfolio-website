@@ -77,19 +77,19 @@ class Main extends React.Component {
             
               <h3>Halfway <br></br></h3>
               <p>
-              Responsive Web App that allows users to find restaurants near a geographic midpoint with texting capabilities.
+              Responsive Web App that allows users to find restaurants near a geographic midpoint between two locations. Halfway utilizes Google Maps, Twilio, and Yelp APIs to simplify the process of grabbing lunch with a co-worker. 
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/m03QK9_884E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
                
               <h3>Draw! <br></br></h3>
               <p>
-              Allows users to sketch and share ideas in real-time. 
+              Multipurpose web app that allow users to draw, collaborate, and share their sketches in REAL TIME! NodeJS and Socket IO combine to deliver a real-time experience. Draw's frontend components allow users to be created, sketch in a variety of styles, and share their ideas on the HTML5 canvas element.
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/xlZx8YlC5I8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
               
               <h3>ToyTanks<br></br></h3>
               <p>
-              Fully functioning Player vs Player tank game with bullet ricochet and hit detection physics.
+              Fully functioning Player vs Player tank game built with the intention of emulating the Wii tanks game. ToyTanks is built with fully functioning hit detection, bullet ricochet physics, and bullet explosion animations.
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/UYB5SAbw_yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
               {close}
@@ -97,7 +97,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" onSubmit = {this.handleSubmit}>
+          {/* <form method="post" onSubmit = {this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" required onChange = {this.handleChange}/>
@@ -114,11 +114,12 @@ class Main extends React.Component {
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
-          </form>
+          </form> */}
+          <p>I would love to connect with you, feel free to connect with me using the links below!</p>
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
             <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            {/* <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li> */}
             <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
