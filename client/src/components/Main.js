@@ -17,24 +17,24 @@ class Main extends React.Component {
     })
   }
 
-  handleReset = () => {
-    this.setState({
-          name:'', 
-          email: '',   
-          message: ''
-    })
-  }
+  // handleReset = () => {
+  //   this.setState({
+  //         name:'', 
+  //         email: '',   
+  //         message: ''
+  //   })
+  // }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-        fetch('http://localhost:4000/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(this.state)
-        })
-  }
+  // handleSubmit = (e) => {
+  //   e.preventDefault();
+  //       fetch('http://localhost:4000/contact', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json'
+  //         },
+  //         body: JSON.stringify(this.state)
+  //       })
+  // }
 
   render() {
     console.log(this.state)
