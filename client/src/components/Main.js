@@ -115,6 +115,7 @@ class Main extends React.Component {
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
           </form> */}
+          {/*add more*/}
           <p>I am passionate about building scalable, stable code, competitve powerlifting, the outdoors, and my favorite soccer team Manchester United!</p>
           <p>I would love to connect, share, and learn from you, feel free to connect with me using the links below!</p>
           <ul className="icons">
