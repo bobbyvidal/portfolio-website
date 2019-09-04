@@ -1,43 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import pic01 from '../images/UofH-Day-Game.jpg'
-import pic03 from '../images/pic03.jpg'
+
+
+
 
 class Main extends React.Component {
 
-  state = {name:'', 
-           email: '',   
-           message: ''}
+  state = {stories: []}
 
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value ,
-      [event.target.name]: event.target.value ,
-      [event.target.name]: event.target.value
-    })
+
+  componentDidMount = () => {
+    fetch("https://medium.com/@bobbyvidal/latest?format=json")
+    .then(response => response.json())
+    .then((response) => this.setState({
+      stories: response
+    }))
   }
 
-  // handleReset = () => {
-  //   this.setState({
-  //         name:'', 
-  //         email: '',   
-  //         message: ''
-  //   })
-  // }
-
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //       fetch('http://localhost:4000/contact', {
-  //         method: 'POST',
-  //         headers: {
-  //           'Content-Type': 'application/json'
-  //         },
-  //         body: JSON.stringify(this.state)
-  //       })
-  // }
-
   render() {
-    console.log(this.state)
+    console.log(this.state.stories)
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
