@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import axios from "axios";
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class IndexPage extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
+      loading: 'is-loading',
+      stories: []
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -25,6 +27,14 @@ class IndexPage extends React.Component {
         this.setState({loading: ''});
     }, 100);
     document.addEventListener('mousedown', this.handleClickOutside);
+
+    axios.get("https://medium.com/@bobbyvidal/latest?format=json")
+    .then(function(response) {
+      return response.json();
+    })    
+    .then(function(myJson) {
+      console.log(JSON.stringify(myJson));
+    });
   }
 
   componentWillUnmount () {

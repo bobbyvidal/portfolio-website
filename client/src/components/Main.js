@@ -9,15 +9,6 @@ class Main extends React.Component {
 
   state = {stories: []}
 
-
-  componentDidMount = () => {
-    fetch("https://medium.com/@bobbyvidal/latest?format=json")
-    .then(response => response.json())
-    .then((response) => this.setState({
-      stories: response
-    }))
-  }
-
   render() {
     console.log(this.state.stories)
 
@@ -83,9 +74,9 @@ class Main extends React.Component {
               {close}
         </article>
 
-        <article id="blogs" className={`${this.props.article === 'blogs' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        {/* <article id="blogs" className={`${this.props.article === 'blogs' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Blogs</h2>
-          {/* <form method="post" onSubmit = {this.handleSubmit}>
+          <form method="post" onSubmit = {this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" required onChange = {this.handleChange}/>
@@ -102,18 +93,18 @@ class Main extends React.Component {
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" onClick = {this.handleReset} /></li>
             </ul>
-          </form> */}
-          {/*add more*/}
+          </form>
+         
           <p>I am passionate about building scalable, stable code, competitve powerlifting, the outdoors, and my favorite soccer team Manchester United!</p>
           <p>I would love to connect, share, and learn from you, feel free to connect with me using the links below!</p>
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
             <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            {/* <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li> */}
+            {/* <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li> 
             <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
-        </article>
+        </article> */}
 
       </div>
     )
