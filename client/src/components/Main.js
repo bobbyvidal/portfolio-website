@@ -49,18 +49,24 @@ class Main extends React.Component {
           <span className="image main"><img src={pic01} alt="about picture" /></span>
           
           <p>Graduate from the University of Houston with a Bachelor of Science. Throughout much of my undergraduate I was studying and preparing for Physical Therapy school. 
-            I volunteered over 300 hours in a variety of Physical Therapy clinics.
+            I volunteered over 300 hours in a variety of Physical Therapy clinics in the Greater Houston Area.
             However, shortly after discovering my passion for code I began teaching myself through resources like Codecademy and the Flatiron School's free bootcamp prep resources.</p>
           
           <p>After graduating from the University of Houston, I enrolled in the Flatiron School's Immersive Software Engineering Bootcamp 
-            with the dream of becoming a Full-Stack developer. At the Flatiron School we specialized in the languages of Ruby and JavaScript and front-end/back-end technologies like Ruby on Rails, 
-            NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI and Semantic UI.
+            with the dream of becoming a Full-Stack developer. At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
+            NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
           </p>
           
           <p>
-            Aside from coding, my passions include soccer, video games, and powerlifting. Growing up I was a competitive soccer player for 16 years and superfan of Manchester United. 
-            Going into college I found my other passions of PC gaming after I build my own computer and became a founding member of the University of Houston Powerlifting team. 
+            Aside from coding, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
+            Feel free to reach out on LinkedIn, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
           </p>
+          <ul className="icons">
+            <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            {/* <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li> */}
+            <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
+          </ul>
           
           {close}
         </article>
@@ -95,8 +101,8 @@ class Main extends React.Component {
               {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
+        <article id="blogs" className={`${this.props.article === 'blogs' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Blogs</h2>
           {/* <form method="post" onSubmit = {this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Name</label>
