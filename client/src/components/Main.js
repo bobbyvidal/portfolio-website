@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import pic01 from '../images/UofH-Day-Game.jpg'
+import medium_logo from '../images/medium_logo.svg'
 
 
 
@@ -44,7 +45,10 @@ class Main extends React.Component {
             <p>At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
               NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
             </p>
-                        
+            <div>
+              <img style={{width: "20%"}} src={medium_logo} alt="work picture" />
+              <p>blahblah blah</p>
+            </div>      
           {close}
         </article> 
 
