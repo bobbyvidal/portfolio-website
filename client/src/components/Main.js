@@ -21,18 +21,13 @@ class Main extends React.Component {
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic01} alt="about picture" /></span>
           
-          <p>Graduate from the University of Houston with a Bachelor of Science. Throughout much of my undergraduate I was studying and preparing for Physical Therapy school. 
-            I volunteered over 300 hours in a variety of Physical Therapy clinics in the Greater Houston Area.
-            However, shortly after discovering my passion for code I began teaching myself through resources like Codecademy and the Flatiron School's free bootcamp prep resources.</p>
-          
-          <p>After graduating from the University of Houston, I enrolled in the Flatiron School's Immersive Software Engineering Bootcamp 
-            with the dream of becoming a Full-Stack developer. At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
-            NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
-          </p>
+          <p>Graduate from the University of Houston with a Bachelor of Science (GPA: 3.70) and the Flatiron School Houston's Immersive Software Engineering Bootcamp. At the Flatiron School 
+           I learned frontend and backend development in a variety of languages and frameworks.
+            </p>
           
           <p>
-            Aside from coding, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
-            Feel free to reach out on LinkedIn, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
+            Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
+            Feel free to reach out on <a style = {{color: "#FF0000"}} href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
           </p>
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
@@ -44,12 +39,14 @@ class Main extends React.Component {
           {close}
         </article>
 
-        {/* <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-              
+            <p>At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
+              NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
+            </p>
+                        
           {close}
-        </article> */}
+        </article> 
 
         <article id="projects" className={`${this.props.article === 'projects' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Projects</h2>
