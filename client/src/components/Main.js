@@ -45,10 +45,18 @@ class Main extends React.Component {
             <p>At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
               NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
             </p>
-            <div>
-              <img style={{width: "20%"}} src={medium_logo} alt="work picture" />
-              <p>blahblah blah</p>
-            </div>      
+            <section style={{display: "flex", flexDirection: "row"}}class="section">
+              <img style = {{width: "20vw"}} src={medium_logo} class="medium logo" />
+              <div style={{padding: "15px"}} class="content">
+                <h2 style = {{fontSize: "18px", lineHeight: "24px", textAlign: "center"}} class="title">
+                  Medium
+                </h2>
+                <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
+                  asdfasdfasdfasdfadsfasdfasdfasdfasdf
+                </p>
+              </div>
+            </section>    
           {close}
         </article> 
 
