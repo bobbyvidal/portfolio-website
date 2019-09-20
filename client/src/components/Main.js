@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import pic01 from '../images/UofH-Day-Game.jpg'
 import medium_logo from '../images/medium_logo.svg'
+import udemy_logo from '../images/udemy_logo.png'
 
 
 
@@ -24,8 +25,7 @@ class Main extends React.Component {
           
           <p>Graduate from the University of Houston with a Bachelor of Science (GPA: 3.70) and the Flatiron School Houston's Immersive Software Engineering Bootcamp. At the Flatiron School 
            I learned frontend and backend development in a variety of languages and frameworks.
-            </p>
-          
+          </p>
           <p>
             Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
             Feel free to reach out on <a style = {{color: "#FF0000"}} href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
@@ -33,7 +33,6 @@ class Main extends React.Component {
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
             <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            {/* <li><a href="https://www.instagram.com/bobby_vidal/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li> */}
             <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           
@@ -46,17 +45,34 @@ class Main extends React.Component {
               NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
             </p>
             <section style={{display: "flex", flexDirection: "row"}}class="section">
-              <img style = {{width: "20vw"}} src={medium_logo} class="medium logo" />
-              <div style={{padding: "15px"}} class="content">
+              <img style = {{width: "10vw"}} src={medium_logo} class="medium logo"/>
+              <div style={{paddingLeft: "15px"}} class="content">
                 <h2 style = {{fontSize: "18px", lineHeight: "24px", textAlign: "center"}} class="title">
                   Medium
+                </h2>
+                <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
+                  If you are interested, check out my Medium account as I publish new blogs each week. I use these blogs to brush up
+                  on new topics and reaffirm ones that I have a previous disposition to. 
+                </p>
+              </div>
+            </section>
+            <section style={{display: "flex", flexDirection: "row"}}class="section">
+              <img style = {{width: "10vw"}} src={udemy_logo} class="medium logo"/>
+              <div style={{paddingLeft: "15px"}} class="content">
+                <h2 style = {{fontSize: "18px", lineHeight: "24px", textAlign: "center"}} class="title">
+                  Udemy
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
                   asdfasdfasdfasdfadsfasdfasdfasdfasdf
                 </p>
               </div>
-            </section>    
+            </section>
+            <ul className="icons">
+            <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
+          </ul>      
           {close}
         </article> 
 
