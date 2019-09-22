@@ -28,7 +28,7 @@ class Main extends React.Component {
           </p>
           <p>
             Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
-            Feel free to reach out on <a style = {{color: "#FF0000"}} href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
+            Feel free to reach out on <a style = {{color: "#FF0000"}} target="_blank" href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
           </p>
           <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
@@ -48,7 +48,7 @@ class Main extends React.Component {
               <img style = {{width: "10vw"}} src={medium_logo} class="medium logo"/>
               <div style={{paddingLeft: "15px"}} class="content">
                 <h2 style = {{fontSize: "18px", lineHeight: "24px", textAlign: "center"}} class="title">
-                  Medium
+                  <a style = {{color: "#FF0000"}} target="_blank" href = "https://medium.com/@bobbyvidal">Medium</a>
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
                   If you are interested, check out my Medium account as I publish new blogs each week. I use these blogs to brush up
@@ -68,7 +68,7 @@ class Main extends React.Component {
                 </p>
               </div>
             </section>
-            <ul className="icons">
+          <ul className="icons">
             <li><a href="mailto: bobbyvidal@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
             <li><a href="https://www.linkedin.com/in/robert-vidal/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
             <li><a href="https://github.com/bobbyvidal" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
