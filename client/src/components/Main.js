@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import pic01 from '../images/UofH-Day-Game.jpg'
 import medium_logo from '../images/medium_logo.svg'
 import udemy_logo from '../images/udemy_logo.png'
-
+import cohort_pic from '../images/Cohort_pic.jpg'
 
 
 
@@ -41,6 +41,7 @@ class Main extends React.Component {
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
+          <span className="image main"><img src={cohort_pic} alt="work picture" /></span>
             <p>At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
               NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
             </p>
@@ -51,8 +52,7 @@ class Main extends React.Component {
                   <a style = {{color: "#FF0000"}} target="_blank" href = "https://medium.com/@bobbyvidal">Medium</a>
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
-                  If you are interested, check out my Medium account as I publish new blogs each week. I use these blogs to brush up
-                  on new topics and reaffirm ones that I have a previous disposition to. 
+                  If you're interested, check out my Medium account as I publish new blogs each week. I use these blogs to explore new topics and brush up on concepts that I have previous exposure to. 
                 </p>
               </div>
             </section>
@@ -63,8 +63,9 @@ class Main extends React.Component {
                   Udemy
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non ex earum, libero dignissimos voluptates. Quis beatae dolorem autem ipsa!
-                  asdfasdfasdfasdfadsfasdfasdfasdfasdf
+                  I am always looking to expand my knowledge in all things code. Currently, I am working on a Udemy course that 
+                  gives me a deeper understanding of both algorithmic thinking and data structures. And as a lifelong learner I look
+                  to take my understanding of C++ to the next step after completing of my current course.
                 </p>
               </div>
             </section>
