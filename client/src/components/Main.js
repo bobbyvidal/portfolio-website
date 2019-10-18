@@ -24,10 +24,10 @@ class Main extends React.Component {
           <span className="image main"><img src={pic01} alt="about picture" /></span>
           
           <p> I am a graduate from the University of Houston with a Bachelor of Science (GPA: 3.70) and the Flatiron School Houston's Immersive Software Engineering Bootcamp. At the Flatiron School 
-           I learned the principles behind front-end and back-end development. I specialized in the languages of Ruby and JavaScript through the utilization of Ruby on Rails, React, React Native, Node.js, and Angular. 
+           I learned the principles behind front-end and back-end development.  
           </p>
           <p>
-            Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect! 
+            Aside from writing code, my passions include soccer, video games, and powerlifting. I was one of the founding members of the University of Houston Powerlifting Team. 
             Feel free to reach out on <a style = {{color: "#FF0000"}} target="_blank" href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
           </p>
           <ul className="icons">
