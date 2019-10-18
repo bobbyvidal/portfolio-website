@@ -27,7 +27,7 @@ class Main extends React.Component {
            I learned the principles behind front-end and back-end development. I specialized in the languages of Ruby and JavaScript through the utilization of Ruby on Rails, React, React Native, Node.js, and Angular. 
           </p>
           <p>
-            Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
+            Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect! 
             Feel free to reach out on <a style = {{color: "#FF0000"}} target="_blank" href = "https://www.linkedin.com/in/robert-vidal/">LinkedIn</a>, or through my email at <a style = {{color: "#FF0000"}} href = "mailto: bobbyvidal@gmail.com">bobbyvidal@gmail.com</a>.
           </p>
           <ul className="icons">
