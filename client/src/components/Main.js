@@ -95,7 +95,7 @@ class Main extends React.Component {
 
               <h3>ToyTanks</h3>
               <p>
-              Fully functioning Player vs Player tank game built with the intention of emulating the Wii tanks game. ToyTanks is built with fully functioning hit detection, bullet ricochet physics, and bullet explosion animations.
+              Fully functioning Player vs Player tank game built with the intention of emulating the Wii tanks game. ToyTanks was built with bullet-on-tank hit detection, bullet ricochet physics, and bullet explosion animations.
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/UYB5SAbw_yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
               {close}
