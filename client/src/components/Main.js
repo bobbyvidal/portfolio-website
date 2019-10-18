@@ -79,20 +79,21 @@ class Main extends React.Component {
 
         <article id="projects" className={`${this.props.article === 'projects' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Projects</h2>
-            
-              <h3>Halfway <br></br></h3>
+          
+              <h3>Halfway</h3>
               <p>
-              Responsive Web App that allows users to find restaurants near a geographic midpoint. Halfway utilizes Google Maps, Twilio, and Yelp APIs to simplify the process of grabbing lunch with a co-worker. 
+              Responsive Web App that allows users to find restaurants near a geographic midpoint. Halfway utilizes Google Maps, Twilio (SMS functionality), and Yelp APIs to simplify the process of grabbing lunch with a co-worker. 
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/m03QK9_884E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
-               
-              <h3>Draw! <br></br></h3>
+              <br></br><br/>
+              <h3>Draw!</h3>
               <p>
               Multipurpose web app that allow users to draw, collaborate, and share their sketches in REAL TIME! NodeJS and Socket IO combine to deliver a real-time experience. Draw's frontend components allow users to be created, sketch in a variety of styles, and share their ideas on the HTML5 canvas element.
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/xlZx8YlC5I8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
-              
-              <h3>ToyTanks<br></br></h3>
+              <br></br><br/>
+
+              <h3>ToyTanks</h3>
               <p>
               Fully functioning Player vs Player tank game built with the intention of emulating the Wii tanks game. ToyTanks is built with fully functioning hit detection, bullet ricochet physics, and bullet explosion animations.
               </p>
