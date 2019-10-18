@@ -24,7 +24,7 @@ class Main extends React.Component {
           <span className="image main"><img src={pic01} alt="about picture" /></span>
           
           <p> I am a graduate from the University of Houston with a Bachelor of Science (GPA: 3.70) and the Flatiron School Houston's Immersive Software Engineering Bootcamp. At the Flatiron School 
-           I learned frontend and backend development in a variety of languages and frameworks.
+           I learned the principles behind front-end and back-end development. I specialized in the languages of Ruby and JavaScript through the utilization of Ruby on Rails, React, React Native, Node.js, and Angular. 
           </p>
           <p>
             Aside from writing code, my passions include soccer, video games, and powerlifting. I would love to connect with you to talk shop or have a conversation about a shared passion. 
