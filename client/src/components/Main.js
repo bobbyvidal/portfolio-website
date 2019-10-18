@@ -43,7 +43,7 @@ class Main extends React.Component {
           <h2 className="major">Work</h2>
           <span className="image main"><img src={cohort_pic} alt="work picture" /></span>
             <p>At the Flatiron School I specialized in the languages of Ruby and JavaScript, front-end/back-end technologies like Ruby on Rails, 
-              NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap.
+              NodeJS, ReactJS, React Native, and HTML5/CSS. I also bring proficiency in SQLite3 for relational databases and a variety of UI frameworks like Material UI, Semantic UI, and Bootstrap to bring responsive displays to some of my more recent projects.
             </p>
             <section style={{display: "flex", flexDirection: "row"}}class="section">
               <img style = {{width: "10vw"}} src={medium_logo} class="medium logo"/>
@@ -52,7 +52,7 @@ class Main extends React.Component {
                   <a style = {{color: "#FF0000"}} target="_blank" href = "https://medium.com/@bobbyvidal">Medium</a>
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
-                  If you're interested, check out my Medium account as I publish new blogs each week. I use these blogs to explore new topics and brush up on concepts that I have previous exposure to. 
+                  If you're interested, check out my Medium account as I publish new blogs each week. I use these blogs to explore new topics and brush up on those that I have previous exposure to. 
                 </p>
               </div>
             </section>
@@ -63,9 +63,8 @@ class Main extends React.Component {
                   Udemy
                 </h2>
                 <p style={{display: "flex", flexDirection: "column"}} class="paragraph">
-                  I am always looking to expand my knowledge in all things code. Currently, I am working on a Udemy course that 
-                  gives me a deeper understanding of both algorithmic thinking and data structures. And as a lifelong learner I look
-                  to take my understanding of C++ to the next step after completing of my current course.
+                  I am always looking to expand my knowledge of all things code. I am currently working on a Udemy course that 
+                  gives me a deeper understanding of algorithmic thinking and data structures in JavaScript. 
                 </p>
               </div>
             </section>
