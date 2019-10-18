@@ -82,7 +82,7 @@ class Main extends React.Component {
             
               <h3>Halfway <br></br></h3>
               <p>
-              Responsive Web App that allows users to find restaurants near a geographic midpoint between two locations. Halfway utilizes Google Maps, Twilio, and Yelp APIs to simplify the process of grabbing lunch with a co-worker. 
+              Responsive Web App that allows users to find restaurants near a geographic midpoint. Halfway utilizes Google Maps, Twilio, and Yelp APIs to simplify the process of grabbing lunch with a co-worker. 
               </p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/m03QK9_884E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen = "true"></iframe>
                
