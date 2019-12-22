@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Bobby Vidal Portfolio",
+    title: "Robert Vidal Portfolio",
     description: "Portfolio website made with Gatsby.JS and React"
   },
   plugins: [
